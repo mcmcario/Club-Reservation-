@@ -1,0 +1,27 @@
+{
+  "name": "qc-after-dark",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@11.19.0",
+  "description": "Local club and bar reservation app for Katipunan and Timog",
+  "scripts": {
+    "start": "node api/server.js",
+    "dev": "vite --config web/vite.config.mjs --host 0.0.0.0",
+    "build": "vite build --config web/vite.config.mjs",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.5.8",
+    "express": "^5.2.1",
+    "pg": "^8.23.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.1",
+    "vite": "^8.3.2"
+  }
+}
